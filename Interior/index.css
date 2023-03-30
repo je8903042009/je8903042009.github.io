@@ -1,0 +1,264 @@
+.BannerArea {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(38, 38, 38, 0) 100%), url(image/index-banner.png);
+}
+
+
+.Title {
+    font-family: 'Noto Serif TC';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 150%;
+    letter-spacing: 0.51em;
+    border-bottom: 1px solid;
+    padding: 12px 0 20px;
+}
+
+.Typetitle {
+    font-family: 'Noto Serif TC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.315em;
+}
+
+.content {
+    font-family: 'Noto Sans CJK TC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.2em;
+}
+
+/*關於我們區塊 start*/
+.aboutUs {
+    text-align: center;
+    margin: 9rem 20rem;
+}
+
+.aboutUs .Title {
+    border-bottom: 0;
+}
+
+.aboutUs .Typetitle {
+    width: 50%;
+    margin: auto;
+    padding-bottom: 26px;
+    border-bottom: 1px solid #000;
+
+}
+
+.aboutUs .content {
+    width: 70%;
+    margin: auto;
+}
+
+/*關於我們區塊 end*/
+
+/*產品介紹區塊 start*/
+.PrdIntro {
+    display: flex;
+    gap: 58px;
+    padding: 10rem 0;
+}
+
+.PrdIntro.furniture {
+    background: #EDEBE9;
+    padding-left: 9rem;
+}
+
+.PrdIntro.cupboard {
+    background: #E1E4E3;
+    padding-right: 9rem;
+}
+
+/*文字區塊*/
+.IntroContainer {
+    width: 40%;
+    position: relative;
+}
+
+.furniture .Title {
+    width: 70%;
+    padding: 12px 0 20px;
+}
+
+.cupboard .Title {
+    width: 40%;
+    padding: 12px 0 20px;
+}
+
+.PrdIntro .content {
+    margin-top: 35px;
+}
+
+.readmore {
+    font-family: 'Noto Serif TC';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 8px 38px;
+    border: 1px solid #000000;
+}
+
+/*prd區塊*/
+.PrdListContainer {
+    width: 60%;
+    display: flex;
+    gap: 3rem;
+    overflow-x: scroll;
+    filter: drop-shadow(-36px 111px 70px rgba(0, 0, 0, 0.04)) drop-shadow(-16px 49px 52px rgba(0, 0, 0, 0.06)) drop-shadow(-4px 12px 29px rgba(0, 0, 0, 0.06));
+}
+
+.PrdCard {
+    margin-bottom: 2.5rem;
+}
+
+.prdName {
+    font-family: 'Noto Serif TC';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--lightBlock_textColor);
+    padding: 17px 0;
+    display: block;
+}
+
+/*scrollBar*/
+.PrdListContainer::-webkit-scrollbar {
+    height: 2px;
+    background-color: #D2D2D2;
+    border-radius: 100px;
+}
+
+.PrdListContainer::-webkit-scrollbar-thumb {
+    background-color: #000;
+    border-radius: 100px;
+}
+
+
+
+/*產品介紹區塊 end*/
+
+/*實際案例區塊 start*/
+.WorkIntro {
+    background-image: url(/image/hardware-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.WorkTypeArea {
+    display: flex;
+    align-items: center;
+    padding: 8.5rem;
+    gap: 4.5rem;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+}
+
+.WorkListContainer {
+    display: flex;
+    width: 66%;
+    gap: 34px;
+    filter: drop-shadow(-36px 111px 70px rgba(0, 0, 0, 0.04)) drop-shadow(-16px 49px 52px rgba(0, 0, 0, 0.06)) drop-shadow(-4px 12px 29px rgba(0, 0, 0, 0.06));
+}
+
+.workCard {
+    padding: 20px 16px;
+    background: #FFFFFF;
+}
+
+.workTitle {
+    font-family: 'Noto Serif TC';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    letter-spacing: 0.085em;
+    color: #000000;
+    margin: 16px 0;
+}
+
+.WorkContent {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.2em;
+    color: var(--lightBlock_textColor);
+}
+
+.workReadmore {
+    margin: 10px 0;
+    display: block;
+}
+
+.workIntroContainer {
+    color: #fff;
+    width: 33%;
+}
+
+.workIntroContainer .readmore {
+    position: revert;
+    bottom: revert;
+    left: revert;
+    padding: 8px 38px;
+    border: 1px solid #fff;
+    display: block;
+    width: fit-content;
+    margin-top: 2.5rem;
+}
+
+/*實際案例區塊 end*/
+
+/*聯絡我們區塊 start*/
+.contactUs {
+    display: flex;
+    padding: 11.5rem;
+    gap: 15.5rem;
+}
+
+.contactIntroContainer {
+    width: 30%;
+}
+
+.googleMap {
+    width: 40%;
+    background: #e8e8e8;
+}
+
+.contactUs .Title {
+    font-size: 24px;
+    width: fit-content;
+    margin-bottom: 24px;
+}
+
+.contactUs .contactBox {
+    display: block;
+    margin: 4rem 0;
+}
+
+.contactIntroContainer .ContactInfo {
+    color: #000;
+    margin: 10px 0;
+}
+
+.contactUsForm {
+    border: 1px solid;
+    padding: 8.5px 29.5px;
+}
+
+.fa-pen-nib {
+    margin-right: 10px;
+}
+
+/*聯絡我們區塊 end*/
