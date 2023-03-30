@@ -1,0 +1,73 @@
+/* banner */
+.BannerArea {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(38, 38, 38, 0) 100%), url(image/hardware-banner.png);
+    position: relative;
+}
+
+.BannerArea .BannerText {
+    font-family: 'Noto Serif CJK TC';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 4rem;
+    line-height: 5.5rem;
+    letter-spacing: 0.12em;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+    width: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+}
+
+main {
+    margin: 8.5rem 4.5rem;
+}
+
+/* blogArea */
+.blogListArea {
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.blogListArea .title {
+    border-bottom: 1px solid #3E3A39;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 150%;
+    letter-spacing: 0.5em;
+    margin-bottom: 3rem;
+}
+
+.blogListBox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4.5rem 2rem;
+}
+
+.blogContainer {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.blogImgBox {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 30rem;
+    height: 20rem;
+}
+
+.blogImgBox img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.blogInfoBox {
+    padding: 1rem 0;
+}

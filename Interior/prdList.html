@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh_TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="prdList.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--header-->
+    <header>
+        <div class="LogoArea">Logo</div>
+        <div class="mobile-navBar">
+            <i class="fa fa-navicon"></i>
+            <!-- <i class="fa fa-times-circle-o"></i> -->
+        </div>
+        <div class="NavBarMenu">
+            <ul class="Layer Layer-One">
+                <li><a href="#" class="active">首頁</a></li>
+                <li class="hasSubLayer"><a href="#">產品介紹<img class="ArrowDownicon" src="/image/icon/arrowdown.svg"></a>
+                    <ul class="Layer Layer-Two" style="display: none;">
+                        <li><a href="#">露營車</a></li>
+                        <li class="hasSubLayer"><a href="#">系統櫃<img class="ArrowDownicon"
+                                    src="/image/icon/arrowdown.svg"></a>
+                            <ul class="Layer Layer-Three" style="display: none;">
+                                <li><a href="#">五金系列</a></li>
+                                <li><a href="#">板材色卡</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">傢俱</a></li>
+                        <li><a href="#">精緻鐵建</a></li>
+                        <li><a href="#">空間設計</a></li>
+                        <li><a href="#">裝修工程</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">案例分享</a></li>
+                <li><a href="#">關於我們</a></li>
+                <li><a href="#">客戶服務</a></li>
+
+            </ul>
+        </div>
+
+    </header>
+    <div class="BannerArea">
+        <h1 class="BannerText">系統家俱</h1>
+    </div>
+    <!--main-->
+    <main>
+        <!-- 路徑 -->
+        <div class="path">
+            <a href="index.html">首頁</a>
+            <span class="pathSlash">/</span>
+            <a href="prdList.html" class="active">系統家俱</a>
+        </div>
+        <!-- 商品區塊 -->
+        <article class="prdListArea">
+            <div class="siteTree">
+                <ul class="siteTreeList">
+                    <li class="siteNode" data-node="all">全部商品</li>
+                    <li class="siteNode" data-node="hardware">五金系列</li>
+                </ul>
+            </div>
+            <div class="prdListContainer">
+                <div class="prdListBox">
+                    <div class="prdContainer">
+                        <div class="prdImgBox">
+                            <img src="/image/furniture/三合一感應式吊燈.jpg" alt="三合一感應式吊燈">
+                        </div>
+                        <div class="prdInfoBox">
+                            <div class="prdName">三合一感應式吊燈</div>
+                        </div>
+                    </div>
+                    <div class="prdContainer">
+                        <div class="prdImgBox">
+                            <img src="/image/furniture/三邊拉籃.jpeg" alt="三邊拉籃">
+                        </div>
+                        <div class="prdInfoBox">
+                            <div class="prdName">三邊拉籃</div>
+                        </div>
+                    </div>
+                    <div class="prdContainer">
+                        <div class="prdImgBox">
+                            <img src="/image/furniture/內崁條燈.jpg" alt="內崁條燈">
+                        </div>
+                        <div class="prdInfoBox">
+                            <div class="prdName">內崁條燈</div>
+                        </div>
+                    </div>
+                    <div class="prdContainer">
+                        <div class="prdImgBox">
+                            <img src="/image/furniture/抽屜燈.jpg" alt="抽屜燈">
+                        </div>
+                        <div class="prdInfoBox">
+                            <div class="prdName">抽屜燈</div>
+                        </div>
+                    </div>
+                    <div class="prdContainer">
+                        <div class="prdImgBox">
+                            <img src="/image/furniture/鉸錬.jpg" alt="鉸錬">
+                        </div>
+                        <div class="prdInfoBox">
+                            <div class="prdName">鉸錬</div>
+                        </div>
+                    </div>
+                    <div class="prdContainer">
+                        <div class="prdImgBox">
+                            <img src="/image/furniture/鋁抽.jpeg" alt="鋁抽">
+                        </div>
+                        <div class="prdInfoBox">
+                            <div class="prdName">鋁抽</div>
+                        </div>
+                    </div>
+                    <div class="prdContainer">
+                        <div class="prdImgBox">
+                            <img src="/image/furniture/KD+木栓.jpg" alt="KD+木栓">
+                        </div>
+                        <div class="prdInfoBox">
+                            <div class="prdName">KD+木栓</div>
+                        </div>
+                    </div>
+                    <div class="prdContainer">
+                        <div class="prdImgBox">
+                            <img src="/image/furniture/LED踢腳燈.jpg" alt="LED踢腳燈">
+                        </div>
+                        <div class="prdInfoBox">
+                            <div class="prdName">LED踢腳燈</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+    <!--footer-->
+    <footer>
+        <div class="InfoArea">
+            <div class="footerContainer contactInfo">
+                <p class="littleTitle">聯絡資訊</p>
+                <div class="contactBox">
+                    <p class="ContactInfo ContactTime"><img src="/icon/clock.svg" alt="可聯絡時間">07:00 - 22:00</p>
+                    <p class="ContactInfo ContactPhone"><img src="/icon/phone.svg" alt="聯絡電話">
+                        <a class="telHref" href="tel:+886-956359907">0956-359-907</a>
+                    </p>
+                    <p class="ContactInfo ContactPlace"><img src="/icon/place.svg" alt="聯絡地址">106 臺北市台北市大安區新生南路一段1號</p>
+                </div>
+            </div>
+            <div class="footerContainer cooperation">
+                <p class="littleTitle">合作企業</p>
+                <a href="#"><img class="Logo_CK" src="/logo/Block_CK.svg" alt="呈格營造"></a>
+            </div>
+            <div class="footerContainer socialMedia">
+                <p class="littleTitle">追蹤鉅沐</p>
+                <div class="mediaContainer">
+                    <a class="media lineBox" href="#">
+                        <img class="mediaimg" src="/icon/line.svg" alt="line">
+                        <span class="mediaName">LINE</span>
+                    </a>
+                    <a class="media facebookBox" href="#">
+                        <img class="mediaimg" src="/icon/facebook.svg" alt="facebook">
+                        <span class="mediaName">Facebook</span>
+                    </a>
+                    <a class="media youtubeBox" href="#">
+                        <img class="mediaimg" src="/icon/youtube.svg" alt="youtube">
+                        <span class="mediaName">Youtube</span>
+                    </a>
+                    <a class="media instagramBox" href="#">
+                        <img class="mediaimg" src="/icon/instagram.svg" alt="instagram">
+                        <span class="mediaName">Instagram</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="copyRight">
+            <p>Copyright© 2022 Eco-Courtyard</p>
+            <p>Designed by Lulu,Jenny</p>
+        </div>
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+TC&family=Noto+Serif+TC&family=Roboto&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Serif TC", "Noto Sans TC";
+    text-decoration: none;
+    color: unset;
+}
+
+:root {
+    --background-color: #F3F2F1;
+    --navBar_textColor: #ffffff;
+    --navBar_Hover_Color: #A07D00;
+    --navBar_sticky_bagroundColor: #ffffff;
+    --navBar_ChildrenItem_BagroundColor: #ffffff;
+    --navBar_sticky_ChildrenItem_BagroundColor: #ffffff2e;
+    --lightBlock_textColor: #464646;
+}
+
+body {
+    background: var(--background-color);
+}
+
+/*Banner*/
+.BannerArea {
+    height: 100vh;
+    width: 100%;
+}
+
+/*headerBox*/
+header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    letter-spacing: 5px;
+    transition: all .5s;
+    z-index: 999;
+}
+
+header.sticky {
+    background: var(--navBar_sticky_bagroundColor);
+    padding: 10px;
+    z-index: 99;
+}
+
+/*navBar*/
+/* .LogoArea {
+    color: #ffffff;
+    font-size: 2rem;
+} */
+
+ul {
+    list-style: none;
+    cursor: pointer;
+}
+
+.Layer-One {
+    display: flex;
+    justify-content: space-around;
+}
+
+.Layer-One>li>a {
+    position: relative;
+    padding: 10px;
+    transition: all .5s;
+    display: inline-block;
+}
+
+/*文字*/
+li a {
+    text-decoration: none;
+    color: var(--navBar_textColor);
+    font-size: 1.1rem;
+}
+
+.sticky li a {
+    color: #999999;
+}
+
+/*下方實線*/
+.Layer-One>li>a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: var(--navBar_Hover_Color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all .5s;
+
+}
+
+/*文字hover*/
+li a.active,
+li a:hover {
+    color: var(--navBar_Hover_Color);
+}
+
+/*下方實線hover*/
+.Layer-One>li>a.active::after,
+.Layer-One>li>a:hover:after {
+    width: 100%;
+}
+
+/*第二層*/
+.Layer-Two {
+    background: var(--navBar_sticky_ChildrenItem_BagroundColor);
+    border-radius: 0 0 8px 8px;
+    padding: 10px;
+    position: absolute;
+    transition: all .5s;
+}
+
+.Layer-Two a {
+    transition: all .5s;
+    border-bottom: 1px solid var(--navBar_sticky_ChildrenItem_BagroundColor);
+    display: block;
+    padding: 5px;
+}
+
+.sticky .Layer-Two {
+    background: #fff;
+}
+
+.sticky .Layer-Two a {
+    color: #000;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.Arrowicon {
+    rotate: 180deg;
+    /* width: 10px; */
+    /* filter: invert(99%) sepia(81%) saturate(2%) hue-rotate(181deg) brightness(109%) contrast(100%); */
+    transition: all .5s;
+}
+
+.hasSubLayer:hover>a>.Arrowicon,
+a.active>.Arrowicon {
+    filter: revert;
+    rotate: 0deg;
+}
+
+.Layer-Three a {
+    padding-left: 20px;
+}
+
+.mobile-navBar {
+    display: none;
+}
+
+@media(max-width:768px) {
+    header {
+        background-color: var(--navBar_sticky_bagroundColor);
+        color: var(--navBar_Hover_Color);
+    }
+
+    .LogoArea {
+        width: 50%;
+    }
+
+    .mobile-navBar {
+        display: block;
+        width: 50%;
+        font-size: 2rem;
+        color: var(--navBar_textColor);
+        text-align: right;
+    }
+
+    .NavBarMenu {
+        position: absolute;
+        top: 85px;
+        left: 0;
+        flex: 1;
+        width: 100%;
+        text-align: center;
+    }
+
+    .Layer {
+        display: block;
+        transition: .5s;
+        clip-path: circle(0 at 100% 0);
+    }
+
+    .Layer.active {
+        clip-path: circle(130% at 100% 0%);
+        background: var(--navBar_sticky_bagroundColor);
+
+    }
+}
+
+
+
+
+.Article-contaioner {
+    padding: 50px 50px 10px 50px;
+    /* background: #977f7f; */
+}
+
+/* popUp區塊 */
+.popUpLine {
+    width: 40px;
+    height: 40px;
+}
+
+.popUpArea {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1.3rem;
+    position: sticky;
+    bottom: 0;
+    padding: 1.2rem;
+}
+
+.ToTopBtn {
+    border: 2px solid #3E3A39;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #3E3A39;
+}
+
+/* ================ Footer ================ */
+footer {
+    background: #ffffff;
+    padding: 3rem 4rem;
+}
+
+footer .InfoArea {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactInfo {
+    flex: 30%;
+}
+
+.cooperation {
+    flex: 20%;
+}
+
+.littleTitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--lightBlock_textColor);
+    font-family: 'Noto Sans';
+    margin-bottom: 2rem;
+}
+
+/*聯絡資訊 start*/
+.ContactInfo {
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--lightBlock_textColor);
+    width: 50%;
+}
+
+.ContactPlace {
+    width: 100%;
+}
+
+.contactBox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*聯絡資訊 end*/
+
+/*社群媒體 start*/
+.mediaContainer {
+    display: flex;
+    align-items: flex-end;
+    gap: 3rem;
+}
+
+.media {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.mediaimg {
+    width: 50px;
+    height: 50px;
+}
+
+/*社群媒體 end*/
+
+.copyRight {
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    color: var(--lightBlock_textColor);
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-top: 35px;
+}
+
+/* 路徑 */
+.path {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.12em;
+    color: #999999;
+    display: flex;
+    gap: 1rem;
+}
+
+.path:hover {
+    color: #262626;
+}
+
+.path .active {
+    pointer-events: none;
+    color: #262626;
+}
+
+.pathSlash {
+    color: #707070;
+}
