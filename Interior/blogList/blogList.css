@@ -1,6 +1,6 @@
 /* banner */
 .BannerArea {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(38, 38, 38, 0) 100%), url(/image/hardware-banner.png);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(38, 38, 38, 0) 100%), url(/Interior/image/hardware-banner.png);
     position: relative;
 }
 

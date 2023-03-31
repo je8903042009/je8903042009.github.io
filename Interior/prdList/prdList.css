@@ -1,6 +1,6 @@
 /* banner */
 .BannerArea {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(38, 38, 38, 0) 100%), url(/image/hardware-banner.png);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(38, 38, 38, 0) 100%), url(/Interior/image/hardware-banner.png);
     position: relative;
 }
 
@@ -49,10 +49,12 @@
 }
 
 .prdImgBox {
-    flex: 1;
+    /* flex: 1; */
     display: inline-flex;
     flex-direction: column;
     justify-content: flex-end;
+    width: 100%;
+    height: 12rem;
 }
 
 .prdImgBox img {
@@ -64,6 +66,18 @@
 .prdInfoBox {
     height: 4.5rem;
     padding: 1rem;
+}
+
+.cooperate_CompanyArea {
+    margin-bottom: 3rem;
+}
+
+.CompanyName {
+    font-size: 1.2rem;
+    padding: 10px 5px;
+    letter-spacing: 0.5em;
+    border-bottom: 1px solid;
+    display: inline-block;
 }
 
 @media(max-width:768px) {
