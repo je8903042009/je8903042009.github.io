@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/image/favicon.ico" rel="shortcut icon" />
-    <title>鉅沐-訂單流程</title>
+    <title>鉅沐-露營車</title>
     <link href="/style.css" rel="stylesheet">
-    <link href="/orderFlow.css" rel="stylesheet">
+    <link href="/blogList/blogList.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet">
 </head>
 
@@ -34,104 +34,64 @@
                         <li><a href="/prdList/cupboard.html">櫥櫃</a></li>
                         <li><a href="/blogList/interior.html">空間設計</a></li>
                         <li><a href="/blogList/renovation.html">裝修工程</a></li>
-                        <li><a href="/blogList/camperVan.html">露營車</a></li>
+                        <li><a class="active" href="/blogList/camperVan.html">露營車</a></li>
                     </ul>
                 </li>
-                <li><a class="active" href="/orderFlow.html">訂單流程</a></li>
+                <li><a href="/orderFlow.html">訂單流程</a></li>
                 <li><a href="/contactUs.html">聯絡我們</a></li>
             </ul>
         </div>
-
     </header>
+
     <div class="BannerArea">
-        <h1 class="BannerText">訂單流程</h1>
+        <h1 class="BannerText">露營車</h1>
     </div>
     <!--main-->
     <main>
         <!-- 路徑 -->
         <div class="path">
-            <a href="index.html">首頁</a>
+            <a href="/index.html">首頁</a>
             <span class="pathSlash">/</span>
-            <a href="orderFlow.html" class="active">訂單流程</a>
+            <a href="/blogList/camperVan.html" class="active">裝修工程</a>
         </div>
-        <!-- solgan -->
-        <div class="solganContainer">
-            <div class="solganBox">
-                <p class="solgan">追求創新與完美，每一個案件的呈現與設計<br>都是經過反覆的發想及討論，最重淬煉而成的</p>
+        <!-- 案例區塊 -->
+        <article class="blogListArea">
+            <div class="siteTree">
+                <ul class="siteTreeList">
+                    <li class="siteNode active" data-node="all">全部案例</li>
+                    <!-- <li class="siteNode" data-node="hardware">五金系列</li> -->
+                </ul>
             </div>
-        </div>
-        <!-- 訂單流程 -->
-        <article class="orderFlowArea">
-            <h2 class="title">訂單流程</h2>
-            <div class="orderStepContainer">
-                <div class="orderStepBox">
-                    <div class="Step">01</div>
-                    <div class="stepInfo">
-                        <div class="stepName">前置作業</div>
-                        <ul class="stepText">
-                            <li>了解需求</li>
-                            <li>丈量現場</li>
-                            <li>勘驗</li>
-                        </ul>
+            <div class="blogListContainer">
+                <p class="title">全部案例</p>
+                <div class="blogListBox">
+                    <div class="blogContainer">
+                        <div class="blogImgBox">
+                            <img src="/image/camperVan/852352.jpg" alt="案例名稱">
+                        </div>
+                        <div class="blogInfoBox">
+                            <div class="blogName">案例名稱</div>
+                        </div>
                     </div>
-                </div>
-                <div class="orderStepBox">
-                    <div class="Step">02</div>
-                    <div class="stepInfo">
-                        <div class="stepName">估價</div>
-                        <ul class="stepText">
-                            <li>預算估價</li>
-                        </ul>
+                    <div class="blogContainer">
+                        <div class="blogImgBox">
+                            <img src="/image/camperVan/852353.jpg" alt="案例名稱">
+                        </div>
+                        <div class="blogInfoBox">
+                            <div class="blogName">案例名稱</div>
+                        </div>
                     </div>
-                </div>
-                <div class="orderStepBox">
-                    <div class="Step">03</div>
-                    <div class="stepInfo">
-                        <div class="stepName">設計規劃</div>
-                        <ul class="stepText">
-                            <li>配置溝通</li>
-                            <li>平面配置設計</li>
-                            <li>提案、動線配置設計</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="orderStepBox">
-                    <div class="Step">04</div>
-                    <div class="stepInfo">
-                        <div class="stepName">設計定稿</div>
-                        <ul class="stepText">
-                            <li>確定規劃</li>
-                            <li>風格設計</li>
-                            <li>材料選定</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="orderStepBox">
-                    <div class="Step">05</div>
-                    <div class="stepInfo">
-                        <div class="stepName">工程施工</div>
-                        <ul class="stepText">
-                            <li>嚴格施工</li>
-                            <li>品質驗收</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="orderStepBox">
-                    <div class="Step">06</div>
-                    <div class="stepInfo">
-                        <div class="stepName">完工（售後保固）</div>
-                        <ul class="stepText">
-                            <li>驗收</li>
-                        </ul>
+                    <div class="blogContainer">
+                        <div class="blogImgBox">
+                            <img src="/image/camperVan/852354.jpg" alt="案例名稱">
+                        </div>
+                        <div class="blogInfoBox">
+                            <div class="blogName">案例名稱</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </article>
-        <!-- 更多問題 -->
-        <div class="moreQ">
-            <p class="title">有更多問題想詢問我們嗎?</p>
-            <a href="/contactUs.html" class="contactUs"><i class="fa-solid fa-pen-nib"></i>填寫聯絡表單</a>
-        </div>
     </main>
     <!--footer-->
     <div class="popUpArea">

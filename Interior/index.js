@@ -1,6 +1,7 @@
-$(".hasSubLayer").on("mouseenter mouseleave", (e) => {
+$(".hasSubLayer").on("mouseenter mouseleave click", (e) => {
     let em = e.currentTarget;
-    $(em).children("ul").toggle();
+    e.stopPropagation();
+    $(em).find(".Layer").eq(0).toggle();
 })
 
 $(document).scroll((e) => {
@@ -15,7 +16,7 @@ $(document).scroll((e) => {
 
 $(".Layer-One li").on("click", (e) => {
     let em = e.currentTarget;
-    let activeArea = $(em).find("a");
+    let activeArea = $(em).find("a").eq(0);
     $(".Layer-One li").find("a").removeClass("active");
     $(activeArea).addClass("active");
 })
@@ -27,4 +28,15 @@ $(".fa-navicon").on("click", (e) => {
     $(".Layer-One").toggleClass("active");
 })
 
-$(".cupboard .PrdListContainer").scrollLeft(1000);
+$(".LineBtn").on("click", (e) => {
+    $(".LineLinkContainer").toggleClass("active");
+})
+
+$(".ToTopBtn").on("click", (e) => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+    });
+})
+
+// $(".cupboard .PrdListContainer").scrollLeft(1000);

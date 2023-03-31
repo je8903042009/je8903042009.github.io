@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/image/favicon.ico" rel="shortcut icon" />
-    <title>鉅沐-訂單流程</title>
+    <title>鉅沐-櫥櫃</title>
     <link href="/style.css" rel="stylesheet">
-    <link href="/orderFlow.css" rel="stylesheet">
+    <link href="/prdList/prdList.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet">
 </head>
 
@@ -23,7 +23,7 @@
         <div class="NavBarMenu">
             <ul class="Layer Layer-One">
                 <li><a href="/index.html">首頁</a></li>
-                <li class="hasSubLayer"><a>產品介紹<i class="fa-solid fa-angle-up Arrowicon"></i></a>
+                <li class="hasSubLayer"><a class="active">產品介紹<i class="fa-solid fa-angle-up Arrowicon"></i></a>
                     <ul class="Layer Layer-Two" style="display: none;">
                         <li class="hasSubLayer"><a>系統家俱<i class="fa-solid fa-angle-up Arrowicon"></i></a>
                             <ul class="Layer Layer-Three" style="display: none;">
@@ -31,20 +31,20 @@
                                 <li><a href="/prdList/furniture_plate.html">板材色卡</a></li>
                             </ul>
                         </li>
-                        <li><a href="/prdList/cupboard.html">櫥櫃</a></li>
+                        <li><a class="active" href="/prdList/cupboard.html">櫥櫃</a></li>
                         <li><a href="/blogList/interior.html">空間設計</a></li>
                         <li><a href="/blogList/renovation.html">裝修工程</a></li>
                         <li><a href="/blogList/camperVan.html">露營車</a></li>
                     </ul>
                 </li>
-                <li><a class="active" href="/orderFlow.html">訂單流程</a></li>
+                <li><a href="/orderFlow.html">訂單流程</a></li>
                 <li><a href="/contactUs.html">聯絡我們</a></li>
             </ul>
         </div>
-
     </header>
+
     <div class="BannerArea">
-        <h1 class="BannerText">訂單流程</h1>
+        <h1 class="BannerText">櫥櫃</h1>
     </div>
     <!--main-->
     <main>
@@ -52,86 +52,37 @@
         <div class="path">
             <a href="index.html">首頁</a>
             <span class="pathSlash">/</span>
-            <a href="orderFlow.html" class="active">訂單流程</a>
+            <a href="/prdList/cupboard.html" class="active">櫥櫃</a>
         </div>
-        <!-- solgan -->
-        <div class="solganContainer">
-            <div class="solganBox">
-                <p class="solgan">追求創新與完美，每一個案件的呈現與設計<br>都是經過反覆的發想及討論，最重淬煉而成的</p>
+        <!-- 商品區塊 -->
+        <article class="prdListArea">
+            <div class="siteTree">
+                <ul class="siteTreeList">
+                    <li class="siteNode" data-node="all">全部商品</li>
+                    <!-- <li class="siteNode active" data-node="Iron">精緻鐵建</li> -->
+                </ul>
             </div>
-        </div>
-        <!-- 訂單流程 -->
-        <article class="orderFlowArea">
-            <h2 class="title">訂單流程</h2>
-            <div class="orderStepContainer">
-                <div class="orderStepBox">
-                    <div class="Step">01</div>
-                    <div class="stepInfo">
-                        <div class="stepName">前置作業</div>
-                        <ul class="stepText">
-                            <li>了解需求</li>
-                            <li>丈量現場</li>
-                            <li>勘驗</li>
-                        </ul>
+            <div class="prdListContainer">
+                <div class="prdListBox">
+                    <div class="prdContainer">
+                        <div class="prdImgBox">
+                            <img src="/image/cupboard/852355.jpg" alt="櫥櫃案例">
+                        </div>
+                        <div class="prdInfoBox">
+                            <div class="prdName">櫥櫃案例</div>
+                        </div>
                     </div>
-                </div>
-                <div class="orderStepBox">
-                    <div class="Step">02</div>
-                    <div class="stepInfo">
-                        <div class="stepName">估價</div>
-                        <ul class="stepText">
-                            <li>預算估價</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="orderStepBox">
-                    <div class="Step">03</div>
-                    <div class="stepInfo">
-                        <div class="stepName">設計規劃</div>
-                        <ul class="stepText">
-                            <li>配置溝通</li>
-                            <li>平面配置設計</li>
-                            <li>提案、動線配置設計</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="orderStepBox">
-                    <div class="Step">04</div>
-                    <div class="stepInfo">
-                        <div class="stepName">設計定稿</div>
-                        <ul class="stepText">
-                            <li>確定規劃</li>
-                            <li>風格設計</li>
-                            <li>材料選定</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="orderStepBox">
-                    <div class="Step">05</div>
-                    <div class="stepInfo">
-                        <div class="stepName">工程施工</div>
-                        <ul class="stepText">
-                            <li>嚴格施工</li>
-                            <li>品質驗收</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="orderStepBox">
-                    <div class="Step">06</div>
-                    <div class="stepInfo">
-                        <div class="stepName">完工（售後保固）</div>
-                        <ul class="stepText">
-                            <li>驗收</li>
-                        </ul>
+                    <div class="prdContainer">
+                        <div class="prdImgBox">
+                            <img src="/image/cupboard/F872210A-B352-47B1-9950-409EB47F372A.jpg" alt="櫥櫃案例">
+                        </div>
+                        <div class="prdInfoBox">
+                            <div class="prdName">櫥櫃案例</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </article>
-        <!-- 更多問題 -->
-        <div class="moreQ">
-            <p class="title">有更多問題想詢問我們嗎?</p>
-            <a href="/contactUs.html" class="contactUs"><i class="fa-solid fa-pen-nib"></i>填寫聯絡表單</a>
-        </div>
     </main>
     <!--footer-->
     <div class="popUpArea">

@@ -30,7 +30,13 @@ body {
     width: 100%;
 }
 
-/*headerBox*/
+@media(max-width:768px) {
+    .BannerArea {
+        height: 75vh;
+    }
+}
+
+/* ============= headerBox =============== */
 header {
     position: fixed;
     top: 0;
@@ -158,8 +164,12 @@ a.active>.Arrowicon {
 
 @media(max-width:768px) {
     header {
-        background-color: var(--navBar_sticky_bagroundColor);
-        color: var(--navBar_Hover_Color);
+        background-color: #000000a6;
+        /* color: var(--navBar_Hover_Color); */
+    }
+
+    header.sticky {
+        background: #ffffff;
     }
 
     .LogoArea {
@@ -174,28 +184,52 @@ a.active>.Arrowicon {
         text-align: right;
     }
 
+    .sticky .mobile-navBar {
+        color: var(--lightBlock_textColor);
+    }
+
     .NavBarMenu {
         position: absolute;
-        top: 85px;
+        top: 100px;
         left: 0;
         flex: 1;
         width: 100%;
         text-align: center;
     }
 
+    .sticky .NavBarMenu {
+        top: 80px;
+    }
+
     .Layer {
         display: block;
-        transition: .5s;
+        transition: 1s;
         clip-path: circle(0 at 100% 0);
     }
 
     .Layer.active {
-        clip-path: circle(130% at 100% 0%);
-        background: var(--navBar_sticky_bagroundColor);
+        clip-path: circle(150% at 0%);
+        background: #000000a6;
 
     }
-}
 
+    .sticky .Layer.active {
+        background: #ffffff;
+    }
+
+    .Layer.Layer-Two,
+    .Layer.Layer-Three {
+        background: revert;
+        position: relative;
+        left: 15%;
+        clip-path: none;
+    }
+
+    .hasSubLayer {
+        display: inline-block;
+        text-align: left;
+    }
+}
 
 
 
@@ -204,7 +238,7 @@ a.active>.Arrowicon {
     /* background: #977f7f; */
 }
 
-/* popUp區塊 */
+/* =========== popUp區塊 ========== */
 .popUpLine {
     width: 40px;
     height: 40px;
@@ -220,6 +254,10 @@ a.active>.Arrowicon {
     padding: 1.2rem;
 }
 
+.popUpBtn {
+    cursor: pointer;
+}
+
 .ToTopBtn {
     border: 2px solid #3E3A39;
     width: 40px;
@@ -230,6 +268,34 @@ a.active>.Arrowicon {
     justify-content: center;
     align-items: center;
     color: #3E3A39;
+}
+
+.LineLinkContainer {
+    transition: all .2s linear;
+    opacity: 0;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    transform: translateX(-30%);
+    background: var(--background-color);
+    border: 1px solid var(--lightBlock_textColor);
+    padding: 2rem;
+    border-radius: 20px;
+    width: min-content;
+}
+
+.LineLinkContainer.active {
+    opacity: 1;
+}
+
+.LineLink {
+    word-break: keep-all;
+}
+
+.LineQRcode {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
 }
 
 /* ================ Footer ================ */
@@ -320,6 +386,23 @@ footer .InfoArea {
     margin-top: 35px;
 }
 
+@media(max-width:768px) {
+    footer .InfoArea {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .mediaContainer {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .copyRight {
+        justify-content: center;
+    }
+}
+
+/* ======== 常用類型 ========== */
 /* 路徑 */
 .path {
     font-weight: 400;
@@ -342,4 +425,28 @@ footer .InfoArea {
 
 .pathSlash {
     color: #707070;
+}
+
+/* 主要內容大小 */
+main {
+    margin: 8.5rem 4.5rem;
+}
+
+/* 左側sidenode */
+.siteNode {
+    padding: 10px 5px;
+    letter-spacing: 0.15em;
+}
+
+.siteNode.active {
+    color: var(--navBar_Hover_Color);
+    border-bottom: 1px solid;
+}
+
+@media(max-width:768px) {
+    .siteNode {
+        text-align: center;
+        border-bottom: 1px solid;
+    }
+
 }

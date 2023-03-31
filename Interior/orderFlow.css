@@ -21,33 +21,6 @@
     padding: 10px;
 }
 
-main {
-    margin: 8.5rem 3rem;
-}
-
-/* 路徑 */
-.path {
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    letter-spacing: 0.12em;
-    color: #999999;
-    display: flex;
-    gap: 1rem;
-}
-
-.path:hover {
-    color: #262626;
-}
-
-.path .active {
-    pointer-events: none;
-    color: #262626;
-}
-
-.pathSlash {
-    color: #707070;
-}
 
 /* solgan */
 .solganContainer {
@@ -188,4 +161,29 @@ ul.stepText {
     line-height: 150%;
     text-align: center;
     letter-spacing: 0.35em;
+}
+
+@media(max-width:768px) {
+
+    .solganContainer,
+    .moreQ {
+        margin: 6.5rem 0;
+    }
+
+    .moreQ .title::after {
+        width: 100%;
+    }
+
+    /* 訂單流程區塊 */
+    .orderFlowArea {
+        margin: 0;
+    }
+
+    .orderStepContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .Step::before {
+        content: revert;
+    }
 }

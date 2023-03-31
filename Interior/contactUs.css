@@ -21,10 +21,6 @@
     padding: 10px;
 }
 
-main {
-    margin: 8.5rem 3rem;
-}
-
 /* solgan */
 .solganContainer {
     margin: 11.5rem 11.5rem 0 11.5rem;
@@ -61,4 +57,10 @@ main {
     display: inline-block;
     border-bottom: 1px solid #3E3A39;
     padding: 10px 0;
+}
+
+@media(max-width:768px) {
+    .solganContainer {
+        margin: 6.5rem 0;
+    }
 }
