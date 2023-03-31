@@ -8,9 +8,9 @@ $(document).scroll((e) => {
     let em = e.currentTarget;
     $("header").toggleClass("sticky", $(em).scrollTop() > 0);
     if ($(em).scrollTop() > 0) {
-        $("header .logoImg").attr("src", "logo/Block_ID.svg");
+        $("header .logoImg").attr("src", "/Interior/logo/Block_ID.svg");
     } else {
-        $("header .logoImg").attr("src", "logo/white_ID.svg");
+        $("header .logoImg").attr("src", "/Interior/logo/white_ID.svg");
     }
 })
 

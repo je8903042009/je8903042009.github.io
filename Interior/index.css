@@ -1,5 +1,5 @@
 .BannerArea {
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(38, 38, 38, 0) 100%), url(image/index-banner.png);
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(38, 38, 38, 0) 100%), url(/Interior/image/index-banner.png);
 }
 
 main {
