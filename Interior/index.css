@@ -1,5 +1,5 @@
 .BannerArea {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(38, 38, 38, 0) 100%), url(image/index-banner.png);
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(38, 38, 38, 0) 100%), url(image/index-banner.png);
 }
 
 main {
@@ -237,6 +237,7 @@ main {
 /*聯絡我們區塊 start*/
 .contactUs {
     display: flex;
+    align-items: center;
     padding: 11.5rem;
     gap: 15.5rem;
 }
@@ -246,8 +247,8 @@ main {
 }
 
 .googleMap {
-    width: 40%;
-    background: #e8e8e8;
+    width: 45%;
+    /* background: #e8e8e8; */
 }
 
 .contactUs .Title {
@@ -317,5 +318,9 @@ main {
 
     .WorkListContainer {
         flex-direction: column;
+    }
+
+    .googleMap {
+        width: 100%;
     }
 }
