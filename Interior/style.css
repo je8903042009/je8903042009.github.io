@@ -451,11 +451,15 @@ main {
 .siteNode {
     padding: 10px 5px;
     letter-spacing: 0.15em;
+    border-bottom: 1px solid;
+}
+
+li.siteNode a {
+    color: #000;
 }
 
 .siteNode.active {
     color: var(--navBar_Hover_Color);
-    border-bottom: 1px solid;
 }
 
 @media(max-width:768px) {

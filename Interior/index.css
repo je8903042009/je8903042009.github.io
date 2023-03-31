@@ -157,7 +157,7 @@ main {
 
 /*實際案例區塊 start*/
 .WorkIntro {
-    background-image: url(/image/hardware-banner.png);
+    background-image: url(image/hardware-banner.png);
     background-repeat: no-repeat;
     background-size: cover;
 
