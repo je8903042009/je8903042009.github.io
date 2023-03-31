@@ -276,3 +276,46 @@ main {
 }
 
 /*聯絡我們區塊 end*/
+
+@media(max-width:768px) {
+    .aboutUs {
+        margin: 9rem 0;
+    }
+
+    .PrdIntro.furniture {
+        flex-direction: column;
+        padding: 10rem 0 10rem 2rem;
+    }
+
+    .PrdIntro.cupboard {
+        flex-direction: column-reverse;
+        padding: 10rem 0 10rem 2rem;
+    }
+
+    .contactUs {
+        padding: 11.5rem 2rem;
+        flex-direction: column;
+    }
+
+    .contactIntroContainer,
+    .IntroContainer,
+    .PrdListContainer,
+    .workIntroContainer {
+        width: 100%;
+    }
+
+    .readmore {
+        display: inline-block;
+        position: revert;
+        margin-top: 20px;
+    }
+
+    .WorkTypeArea {
+        flex-direction: column-reverse;
+        padding: 8.5rem 2rem;
+    }
+
+    .WorkListContainer {
+        flex-direction: column;
+    }
+}
