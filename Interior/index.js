@@ -1,4 +1,4 @@
-$(".hasSubLayer").on("mouseenter mouseleave click", (e) => {
+$(".hasSubLayer").on("mouseenter mouseleave", (e) => {
     let em = e.currentTarget;
     e.stopPropagation();
     $(em).find(".Layer").eq(0).toggle();
@@ -21,14 +21,27 @@ $(".Layer-One li").on("click", (e) => {
     $(activeArea).addClass("active");
 })
 
-$(".fa-navicon").on("click", (e) => {
+// $(".fa-navicon").on("click", (e) => {
+//     let em = e.currentTarget;
+//     $(em).toggleClass("fa-navicon");
+//     $(em).toggleClass("fa-remove");
+//     // $(".NavBarMenu").toggle();
+//     $(".Layer-One").toggleClass("active");
+// })
+
+$(".mobile-navBarBtn").on("click", (e) => {
     let em = e.currentTarget;
-    $(em).toggleClass("fa-navicon");
-    $(em).toggleClass("fa-remove");
+    $(em).toggleClass("active");
+    $(em).find("i").toggleClass("fa-navicon");
+    $(em).find("i").toggleClass("fa-remove");
+    // $(".NavBarMenu").toggle();
+    $(".NavBarMenu").toggleClass("active");
     $(".Layer-One").toggleClass("active");
 })
 
 $(".LineBtn").on("click", (e) => {
+    e.stopPropagation();
+    $(".LineLinkContainer").fadeToggle();
     $(".LineLinkContainer").toggleClass("active");
 })
 

@@ -93,7 +93,8 @@ main {
     padding: 12px 0 20px;
 }
 
-.PrdIntro .content {
+.PrdIntro .content,
+.WorkIntro .content {
     margin-top: 35px;
 }
 
@@ -157,7 +158,7 @@ main {
 
 /*實際案例區塊 start*/
 .WorkIntro {
-    background-image: url(image/hardware-banner.png);
+    background-image: url(/Interior/image/interiorDesign/banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 

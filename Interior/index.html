@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="image/favicon.ico" rel="shortcut icon" />
+    <link href="/Interior/image/favicon.ico" rel="shortcut icon" />
     <title>鉅沐工程有限公司</title>
-    <link href="style.css" rel="stylesheet">
-    <link href="index.css" rel="stylesheet">
+    <link href="/Interior/style.css" rel="stylesheet">
+    <link href="/Interior/index.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet">
 </head>
 
@@ -17,33 +17,31 @@
     <header>
         <div class="LogoArea"><img class="logoImg" src="/Interior/logo/white_ID.svg"></div>
         <div class="mobile-navBar">
-            <i class="fa fa-navicon"></i>
+            <div class="mobile-navBarBtn"><i class="fa fa-navicon"></i></div>
             <!-- <i class="fa fa-times-circle-o"></i> -->
         </div>
-        <div class="NavBarMenu">
+        <nav class="NavBarMenu">
             <ul class="Layer Layer-One">
-                <li><a class="active" href="index.html">首頁</a></li>
-                <li class="hasSubLayer"><a>產品介紹<i class="fa-solid fa-angle-up Arrowicon"></i></a>
+                <li><a class="active" href="/Interior/index.html">首頁</a></li>
+                <li class="hasSubLayer">
+                    <a>系統家俱<i class="fa-solid fa-angle-up Arrowicon"></i></a>
                     <ul class="Layer Layer-Two" style="display: none;">
-                        <li class="hasSubLayer"><a>系統家俱<i class="fa-solid fa-angle-up Arrowicon"></i></a>
-                            <ul class="Layer Layer-Three" style="display: none;">
-                                <li><a href="prdList/furniture_Iron.html">精緻鐵件</a></li>
-                                <li><a href="prdList/furniture_plate.html">板材色卡</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="prdList/cupboard.html">櫥櫃</a></li>
-                        <li><a href="blogList/interior.html">空間設計</a></li>
-                        <li><a href="blogList/renovation.html">裝修工程</a></li>
-                        <li><a href="blogList/camperVan.html">露營車</a></li>
+                        <li><a href="/Interior/prdList/kitchenware.html">廚具</a></li>
+                        <li><a href="/Interior/prdList/cupboard.html">櫥櫃</a></li>
+                        <li><a href="/Interior/prdList/bathroomCabinet.html">浴櫃</a></li>
+                        <li><a href="/Interior/prdList/plate.html">板材</a></li>
                     </ul>
                 </li>
-                <li><a href="orderFlow.html">訂單流程</a></li>
-                <li><a href="contactUs.html">聯絡我們</a></li>
+                <li><a href="/Interior/blogList/interior.html">設計裝修</a></li>
+                <li><a href="/Interior/blogList/camperVan.html">露營車</a></li>
+                <li><a href="/Interior/orderFlow.html">訂單流程</a></li>
+                <li><a href="/Interior/contactUs.html">聯絡我們</a></li>
             </ul>
-        </div>
+        </nav>
     </header>
 
-    <div class="BannerArea"></div>
+    <iframe class="BannerArea" src="https://www.youtube.com/embed/vnzOQGCWXQU?&autoplay=1" frameborder="0"
+        allowfullscreen></iframe>
     <!--main-->
     <main>
         <!--關於我們-->
@@ -59,42 +57,42 @@
             <div class="IntroContainer">
                 <h3 class="Typetitle">產品介紹</h3>
                 <h2 class="Title">系統家俱</h2>
-                <p class="content">家居設計DIY： 4個超實用免費室內設計網站＋App · Houzz可謂全球最受歡迎的家具設計</p>
-                <a class="readmore" href="prdList/furniture_Iron.html">了解更多</a>
+                <p class="content">同時具備秩序與美感，創造自己的風格空間</p>
+                <a class="readmore" href="/Interior/prdList/kitchenware.html">了解更多</a>
             </div>
             <div class="PrdListContainer">
                 <div class="PrdCard">
-                    <img src="image/furniture/三合一感應式吊燈.jpg">
-                    <span class="prdName">三合一感應式吊燈</span>
-                </div>
-                <div class="PrdCard">
-                    <img src="image/furniture/三邊拉籃.jpeg">
+                    <img src="/Interior/image/kitchenware/hardware/1_三邊拉籃.jpg">
                     <span class="prdName">三邊拉籃</span>
                 </div>
                 <div class="PrdCard">
-                    <img src="image/furniture/內崁條燈.jpg">
-                    <span class="prdName">內崁條燈</span>
+                    <img src="/Interior/image/kitchenware/hardware/4_高昇櫃.png">
+                    <span class="prdName">高昇櫃</span>
                 </div>
                 <div class="PrdCard">
-                    <img src="image/furniture/抽屜燈.jpg">
-                    <span class="prdName">抽屜燈</span>
+                    <img src="/Interior/image/cupboard/hardware/3_鋼珠斜邊四邊籃.jpg">
+                    <span class="prdName">鋼珠斜邊四邊籃</span>
                 </div>
                 <div class="PrdCard">
-                    <img src="image/furniture/鋁抽.jpeg">
+                    <img src="/Interior/image/bathroomCabinet/hardware/1_智能防霧鏡.jpg">
+                    <span class="prdName">智能防霧鏡</span>
+                </div>
+                <!-- <div class="PrdCard">
+                    <img src="/Interior/image/furniture/鋁抽.jpeg">
                     <span class="prdName">鋁抽</span>
-                </div>
+                </div> -->
             </div>
         </article>
-        <!--櫥櫃-->
+        <!--露營車-->
         <article class="PrdIntro cupboard">
             <div class="PrdListContainer">
                 <div class="PrdCard">
-                    <img src="image/cupboard/852355.jpg">
-                    <span class="prdName">櫥櫃案例</span>
+                    <img src="/Interior/image/camperVan/一體成型露營車/1.JPG">
+                    <span class="prdName">一體成型露營車</span>
                 </div>
                 <div class="PrdCard">
-                    <img src="image/cupboard/F872210A-B352-47B1-9950-409EB47F372A.jpg">
-                    <span class="prdName">櫥櫃案例</span>
+                    <img src="/Interior/image/camperVan/拖拉式露營車/1.JPG">
+                    <span class="prdName">拖拉式露營車</span>
                 </div>
                 <!-- <div class="PrdCard">
                     <img src="/image/furniture.png">
@@ -111,19 +109,19 @@
             </div>
             <div class="IntroContainer">
                 <h3 class="Typetitle">產品介紹</h3>
-                <h2 class="Title">櫥櫃</h2>
-                <p class="content">家居設計DIY： 4個超實用免費室內設計網站＋App · Houzz可謂全球最受歡迎的家具設計</p>
-                <a class="readmore" href="prdList/cupboard.html">了解更多</a>
+                <h2 class="Title">露營車</h2>
+                <p class="content">帶著家的感覺，自在旅行</p>
+                <a class="readmore" href="/Interior/blogList/camperVan.html">了解更多</a>
             </div>
         </article>
-        <!--實際案例-->
+        <!--設計裝修-->
         <article class="WorkIntro">
             <div class="WorkTypeArea hardware">
                 <div class="WorkListContainer">
                     <div class="workCard">
-                        <img src="image/interiorDesign/7e502375-fd61-4593-9dfb-f071a960326f.jpg">
+                        <img src="/Interior/image/interiorDesign/livingRoom/3_巴洛克風格客廳.jpg">
                         <div class="workText">
-                            <h3 class="workTitle">案例名稱</h3>
+                            <h3 class="workTitle">巴洛克風格客廳</h3>
                             <!-- <p class="WorkContent">4個超實用免費室內設計網站＋App · Houzz可謂全球最受歡迎的家具設計裝修網站，主要功能有「 · Get
                                 Ideas」供尋找設計靈感4個超實用免費室內設計網站＋App ·
                                 Houzz可謂全球最受歡迎的家具設計裝修網站，主要功能有「 · Get Ideas」供尋找設計靈感</p> -->
@@ -131,9 +129,9 @@
                         <!-- <a class="workReadmore" href="#">了解詳情 　⟶</a> -->
                     </div>
                     <div class="workCard">
-                        <img src="image/interiorDesign/8f1e6608-fec2-49ac-9dc8-aca597eebe15.jpg">
+                        <img src="/Interior/image/interiorDesign/room/4_公主女兒房.jpg">
                         <div class="workText">
-                            <h3 class="workTitle">案例名稱</h3>
+                            <h3 class="workTitle">公主女兒房</h3>
                             <!-- <p class="WorkContent">4個超實用免費室內設計網站＋App · Houzz可謂全球最受歡迎的家具設計裝修網站，主要功能有「 · Get
                                 Ideas」供尋找設計靈感4個超實用免費室內設計網站＋App ·
                                 Houzz可謂全球最受歡迎的家具設計裝修網站，主要功能有「 · Get Ideas」供尋找設計靈感</p> -->
@@ -144,8 +142,9 @@
 
                 <div class="workIntroContainer">
                     <h3 class="Typetitle">案例分享</h3>
-                    <h2 class="Title">空間設計</h2>
-                    <a class="readmore" href="blogList/interior.html">了解更多</a>
+                    <h2 class="Title">設計裝修</h2>
+                    <p class="content">將理念注入每個細節，打造你的夢想空間</p>
+                    <a class="readmore" href="/Interior/blogList/interior.html">了解更多</a>
                 </div>
             </div>
 
@@ -158,13 +157,14 @@
 
                     （若為大型工程也歡迎與我們聯絡喔）</p>
                 <div class="contactBox">
-                    <p class="ContactInfo ContactTime"><img src="icon/clock.svg" alt="可聯絡時間">07:00 - 22:00</p>
-                    <p class="ContactInfo ContactPhone"><img src="icon/phone.svg" alt="聯絡電話">
-                        <a class="telHref" href="tel:+886-956359907">0956-359-907</a>
+                    <p class="ContactInfo ContactTime"><img src="/Interior/icon/clock.svg" alt="可聯絡時間">08:30 - 17:30</p>
+                    <p class="ContactInfo ContactPhone"><img src="/Interior/icon/phone.svg" alt="聯絡電話">
+                        <a class="telHref" href="tel:+886-5-2810587">（05）281-0587</a>
                     </p>
-                    <p class="ContactInfo ContactPlace"><img src="icon/place.svg" alt="聯絡地址">106 臺北市台北市大安區新生南路一段1號</p>
+                    <p class="ContactInfo ContactPlace"><img src="/Interior/icon/place.svg" alt="聯絡地址">嘉義市西區長安街123號1樓
+                    </p>
                 </div>
-                <a class="contactUsForm" href="contactUs.html"><i class="fa-solid fa-pen-nib"></i>填寫聯絡表單</a>
+                <a class="contactUsForm" href="/Interior/contactUs.html"><i class="fa-solid fa-pen-nib"></i>填寫聯絡表單</a>
             </div>
             <div class="googleMap">
                 <iframe
@@ -178,11 +178,12 @@
     <div class="popUpArea">
         <div class="popUpBtn ToTopBtn"><i class="fa-solid fa-angle-up"></i></div>
         <div class="popUpBtn LineBtn">
-            <img class="popUpLine" src="icon/line.svg" alt="line">
-            <div class="LineLinkContainer">
-                <a class="LineLink" href="https://lin.ee/7ycMkqN">加入LINE@！</a>
-                <img class="LineQRcode" src="image/LINE.PNG" alt="Line">
-            </div>
+            <img class="popUpLine" src="/Interior/icon/line.svg" alt="line">
+        </div>
+        <div class="LineLinkContainer">
+            <a class="LineLink" href="https://lin.ee/7ycMkqN">加入LINE@！</a>
+            <p class="LineLinkText">獲取更多鉅沐的第一手資訊！</p>
+            <img class="LineQRcode" src="/Interior/image/LINE.PNG" alt="Line">
         </div>
     </div>
     <footer>
@@ -190,35 +191,37 @@
             <div class="footerContainer contactInfo">
                 <p class="littleTitle">聯絡資訊</p>
                 <div class="contactBox">
-                    <p class="ContactInfo ContactTime"><img src="icon/clock.svg" alt="可聯絡時間">09:00 - 18:00</p>
-                    <p class="ContactInfo ContactPhone"><img src="icon/phone.svg" alt="聯絡電話">
+                    <p class="ContactInfo ContactTime"><img src="/Interior/icon/clock.svg" alt="可聯絡時間">08:30 - 17:30</p>
+                    <p class="ContactInfo ContactPhone"><img src="/Interior/icon/phone.svg" alt="聯絡電話">
                         <a class="telHref" href="tel:+886-5-2810587">（05）281-0587</a>
                     </p>
-                    <p class="ContactInfo ContactPlace"><img src="icon/place.svg" alt="聯絡地址">公司：嘉義市西區長安街123號1樓</p>
-                    <p class="ContactInfo ContactPlace"><img src="icon/place.svg" alt="聯絡地址">工廠：嘉義縣灣橋村碑堂51-3號</p>
+                    <p class="ContactInfo ContactPlace"><img src="/Interior/icon/place.svg" alt="聯絡地址">公司：嘉義市西區長安街123號1樓
+                    </p>
+                    <p class="ContactInfo ContactPlace"><img src="/Interior/icon/place.svg" alt="聯絡地址">工廠：嘉義縣灣橋村碑堂51-3號
+                    </p>
                 </div>
             </div>
             <div class="footerContainer cooperation">
                 <p class="littleTitle">合作企業</p>
-                <a href="#"><img class="Logo_CK" src="logo/Block_CK.svg" alt="呈格營造"></a>
+                <a href="#"><img class="Logo_CK" src="/Interior/logo/Block_CK.svg" alt="呈格營造"></a>
             </div>
             <div class="footerContainer socialMedia">
                 <p class="littleTitle">追蹤鉅沐</p>
                 <div class="mediaContainer">
                     <a class="media lineBox" href="https://lin.ee/7ycMkqN">
-                        <img class="mediaimg" src="icon/line.svg" alt="line">
+                        <img class="mediaimg" src="/Interior/icon/line.svg" alt="line">
                         <span class="mediaName">LINE</span>
                     </a>
                     <a class="media facebookBox" href="#">
-                        <img class="mediaimg" src="icon/facebook.svg" alt="facebook">
+                        <img class="mediaimg" src="/Interior/icon/facebook.svg" alt="facebook">
                         <span class="mediaName">Facebook</span>
                     </a>
                     <a class="media youtubeBox" href="#">
-                        <img class="mediaimg" src="icon/youtube.svg" alt="youtube">
+                        <img class="mediaimg" src="/Interior/icon/youtube.svg" alt="youtube">
                         <span class="mediaName">Youtube</span>
                     </a>
                     <a class="media instagramBox" href="#">
-                        <img class="mediaimg" src="icon/instagram.svg" alt="instagram">
+                        <img class="mediaimg" src="/Interior/icon/instagram.svg" alt="instagram">
                         <span class="mediaName">Instagram</span>
                     </a>
                 </div>
@@ -232,7 +235,7 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
-    <script src="index.js"></script>
+    <script src="/Interior/index.js"></script>
 </body>
 
 </html>

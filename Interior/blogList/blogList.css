@@ -1,8 +1,8 @@
 /* banner */
-.BannerArea {
+/* .BannerArea {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(38, 38, 38, 0) 100%), url(/Interior/image/hardware-banner.png);
     position: relative;
-}
+} */
 
 .BannerArea .BannerText {
     font-family: 'Noto Serif CJK TC';
@@ -23,10 +23,11 @@
 
 /* blogArea */
 .blogListArea {
-    margin-top: 8rem;
+    margin-top: 5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 2rem;
 }
 
 .blogListArea .title {
@@ -45,9 +46,18 @@
     grid-gap: 4.5rem 2rem;
 }
 
+.col-3 .blogListBox {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem 1rem;
+}
+
 .blogContainer {
     display: inline-flex;
     flex-direction: column;
+}
+
+.CanClick {
+    cursor: pointer;
 }
 
 .blogImgBox {
@@ -55,6 +65,11 @@
     flex-direction: column;
     justify-content: flex-end;
     width: 30rem;
+    height: 20rem;
+}
+
+.col-3 .blogImgBox {
+    width: 20rem;
     height: 20rem;
 }
 
@@ -73,7 +88,7 @@
         flex-direction: column;
     }
 
-    .blogListBox {
+    .blogListContainer .blogListBox {
         grid-template-columns: 1fr;
     }
 
@@ -84,5 +99,145 @@
 
     .blogListContainer {
         margin-top: 5rem;
+    }
+}
+
+/* 照片內容顯示彈出視窗 */
+.innerWindow {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    background: #000000c7;
+}
+
+.caseNameContainer {
+    width: max-content;
+    max-width: 80%;
+    /* margin: auto; */
+    /* text-align: center; */
+    border-bottom: 1px solid #000000;
+    padding: 0.5rem;
+}
+
+.innerWindow .caseName {
+    font-size: 2rem;
+    letter-spacing: 0.5em;
+    line-height: 150%;
+}
+
+.ImgArea {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    background: #FFFFFF;
+    border-radius: 8px;
+    padding: 2rem;
+    position: relative;
+    transform: translateY(20%);
+}
+
+.ImgContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 1.2rem;
+    margin-top: 2.5rem;
+    height: inherit;
+    padding-bottom: 2rem;
+}
+
+.ImgArea img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.BigImgContainer {
+    width: 80%;
+    height: 100%;
+}
+
+.BigImgContainer img {
+    border-radius: 4px;
+}
+
+.smallImgContainer {
+    display: inline-flex;
+    gap: 1.75rem;
+    flex-direction: column;
+    width: 20%;
+    height: 100%;
+    overflow: auto;
+    padding: 4px;
+}
+
+.smallImgContainer::-webkit-scrollbar {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    width: 6px;
+    background-color: #e0e0e0;
+}
+
+.smallImgContainer::-webkit-scrollbar-thumb {
+    background-color: #9f9f9f;
+    border-radius: 100px;
+}
+
+.smallImgBox {
+    position: relative;
+    cursor: pointer;
+    height: 30%;
+}
+
+.smallImgBox:before {
+    content: " ";
+    position: absolute;
+    background-color: #000000;
+    opacity: .7;
+    width: 100%;
+    height: 100%;
+}
+
+.smallImgBox.active:before {
+    content: revert;
+}
+
+.cancel-btn {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 2rem;
+}
+
+@media(max-width:768px) {
+
+    .innerWindow .caseName {
+        font-size: 1.2rem;
+    }
+
+    .ImgContainer {
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+
+    .BigImgContainer {
+        width: 100%;
+        height: 50%;
+    }
+
+    .smallImgContainer {
+        width: 100%;
+        flex-direction: revert;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .smallImgBox {
+        width: 45%;
+        height: fit-content;
     }
 }
