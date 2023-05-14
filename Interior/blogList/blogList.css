@@ -233,11 +233,12 @@
         width: 100%;
         flex-direction: revert;
         flex-wrap: wrap;
+        align-items: stretch;
         gap: 1rem;
     }
 
     .smallImgBox {
         width: 45%;
-        height: fit-content;
+        height: 100%;
     }
 }
