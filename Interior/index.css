@@ -27,7 +27,7 @@ main {
 }
 
 .content {
-    font-family: 'Noto Sans CJK TC';
+    font-family: 'Noto Sans TC';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -113,7 +113,7 @@ main {
     display: flex;
     gap: 3rem;
     overflow-x: scroll;
-    filter: drop-shadow(-36px 111px 70px rgba(0, 0, 0, 0.04)) drop-shadow(-16px 49px 52px rgba(0, 0, 0, 0.06)) drop-shadow(-4px 12px 29px rgba(0, 0, 0, 0.06));
+    /* filter: drop-shadow(-36px 111px 70px rgba(0, 0, 0, 0.04)) drop-shadow(-16px 49px 52px rgba(0, 0, 0, 0.06)) drop-shadow(-4px 12px 29px rgba(0, 0, 0, 0.06)); */
 }
 
 .PrdCard {
@@ -177,7 +177,7 @@ main {
     display: flex;
     width: 66%;
     gap: 34px;
-    filter: drop-shadow(-36px 111px 70px rgba(0, 0, 0, 0.04)) drop-shadow(-16px 49px 52px rgba(0, 0, 0, 0.06)) drop-shadow(-4px 12px 29px rgba(0, 0, 0, 0.06));
+    /* filter: drop-shadow(-36px 111px 70px rgba(0, 0, 0, 0.04)) drop-shadow(-16px 49px 52px rgba(0, 0, 0, 0.06)) drop-shadow(-4px 12px 29px rgba(0, 0, 0, 0.06)); */
 }
 
 .workCard {
@@ -231,6 +231,12 @@ main {
     display: block;
     width: fit-content;
     margin-top: 2.5rem;
+}
+
+@media(max-width:768px) {
+    .WorkIntro {
+        background-position: 85% 70%;
+    }
 }
 
 /*實際案例區塊 end*/
