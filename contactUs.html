@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh_TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./image/favicon.ico" rel="shortcut icon" />
+    <title>鉅沐-聯絡我們</title>
+    <link href="./style.css" rel="stylesheet">
+    <link href="./contactUs.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet">
+    <style>
+        .BannerArea {
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(38, 38, 38, 0) 100%), url(./image/contact-banner.jpg);
+            position: relative;
+            background-size: cover;
+            background-position: 100% 70%;
+            background-repeat: no-repeat;
+        }
+
+        @media(max-width:768px) {
+            .BannerArea {
+                background-position: 50% 70%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!--header-->
+    <header>
+        <div class="LogoArea"><img class="logoImg" src="./logo/white_ID.svg"></div>
+        <div class="mobile-navBar">
+            <div class="mobile-navBarBtn"><i class="fa fa-navicon"></i></div>
+            <!-- <i class="fa fa-times-circle-o"></i> -->
+        </div>
+        <nav class="NavBarMenu">
+            <ul class="Layer Layer-One">
+                <li><a href="./index.html">首頁</a></li>
+                <li class="hasSubLayer">
+                    <a>系統家俱<i class="fa-solid fa-angle-up Arrowicon"></i></a>
+                    <ul class="Layer Layer-Two" style="display: none;">
+                        <li><a href="./prdList/kitchenware.html">廚具</a></li>
+                        <li><a href="./prdList/cupboard.html">櫥櫃</a></li>
+                        <li><a href="./prdList/bathroomCabinet.html">浴櫃</a></li>
+                        <li><a href="./prdList/plate.html">板材</a></li>
+                    </ul>
+                </li>
+                <li><a href="./blogList/interior.html">設計裝修</a></li>
+                <li><a href="./blogList/camperVan.html">露營車</a></li>
+                <li><a href="./orderFlow.html">訂單流程</a></li>
+                <li><a class="active" href="./contactUs.html">聯絡我們</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="BannerArea">
+        <h1 class="BannerText">聯絡我們</h1>
+    </div>
+    <!--main-->
+    <main>
+        <!-- 路徑 -->
+        <div class="path">
+            <a href="./index.html">首頁</a>
+            <span class="pathSlash">/</span>
+            <a href="./contactUs.html" class="active">聯絡我們</a>
+        </div>
+        <!-- solgan -->
+        <div class="solganContainer">
+            <h2 class="title">聯絡鉅沐</h2>
+            <div class="solganBox">
+                <p class="solgan">不管有什麼想法，都與我們聯絡吧，讓你腦中「家的模樣」，變成可實際執行的裝修工程，還可以為你介紹嘉義的特色景點與美食呦！
+                    <span class="solgan-smallText">（若為大型工程也歡迎與我們聯絡喔）</span>
+                </p>
+            </div>
+        </div>
+        <!-- google表單 -->
+        <article class="contactArea">
+            <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLSfUNKY_hRJu6MGGpxWBVXh90NzJ8jvYIyozLwydB8nTmBbl7g/viewform?embedded=true"
+                width="100%" height="2100px" frameborder="0" marginheight="0" marginwidth="0"
+                scrolling="auto">載入中…</iframe>
+        </article>
+    </main>
+    <!--footer-->
+    <div class="popUpArea">
+        <div class="popUpBtn ToTopBtn"><i class="fa-solid fa-angle-up"></i></div>
+        <div class="popUpBtn LineBtn">
+            <img class="popUpLine" src="./icon/line.svg" alt="line">
+        </div>
+        <div class="LineLinkContainer">
+            <a class="LineLink" href="https://lin.ee/7ycMkqN">加入LINE＠</a>
+            <p class="LineLinkText">獲取更多鉅沐的第一手資訊！</p>
+            <img class="LineQRcode" src="./image/LINE.PNG" alt="Line">
+        </div>
+    </div>
+    <footer>
+        <div class="InfoArea">
+            <div class="footerContainer contactInfo">
+                <p class="littleTitle">聯絡資訊</p>
+                <div class="contactBox">
+                    <p class="ContactInfo ContactTime"><img src="./icon/clock.svg" alt="可聯絡時間">08:30 - 17:30</p>
+                    <p class="ContactInfo ContactPhone"><img src="./icon/phone.svg" alt="聯絡電話">
+                        <a class="telHref" href="tel:+886-5-2810587">（05）281-0587</a>
+                    </p>
+                    <p class="ContactInfo ContactPlace"><img src="./icon/place.svg" alt="聯絡地址">公司：嘉義市西區長安街123號1樓
+                    </p>
+                    <p class="ContactInfo ContactPlace"><img src="./icon/place.svg" alt="聯絡地址">工廠：嘉義縣灣橋村碑堂51-3號
+                    </p>
+                </div>
+            </div>
+            <div class="footerContainer cooperation">
+                <p class="littleTitle">合作企業</p>
+                <a href="#"><img class="Logo_CK" src="./logo/Block_CK.svg" alt="呈格營造"></a>
+            </div>
+            <div class="footerContainer socialMedia">
+                <p class="littleTitle">追蹤鉅沐</p>
+                <div class="mediaContainer">
+                    <a class="media lineBox" href="https://lin.ee/7ycMkqN">
+                        <img class="mediaimg" src="./icon/line.svg" alt="line">
+                        <span class="mediaName">LINE</span>
+                    </a>
+                    <a class="media facebookBox" href="#">
+                        <img class="mediaimg" src="./icon/facebook.svg" alt="facebook">
+                        <span class="mediaName">Facebook</span>
+                    </a>
+                    <a class="media youtubeBox" href="#">
+                        <img class="mediaimg" src="./icon/youtube.svg" alt="youtube">
+                        <span class="mediaName">Youtube</span>
+                    </a>
+                    <a class="media instagramBox" href="#">
+                        <img class="mediaimg" src="./icon/instagram.svg" alt="instagram">
+                        <span class="mediaName">Instagram</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="copyRight">
+            <p>Copyright© 2023 鉅沐工程有限公司</p>
+            <!-- <p>Designed by Lulu,Jenny</p> -->
+        </div>
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>

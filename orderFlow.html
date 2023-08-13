@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh_TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./image/favicon.ico" rel="shortcut icon" />
+    <title>鉅沐-訂單流程</title>
+    <link href="./style.css" rel="stylesheet">
+    <link href="./orderFlow.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet">
+    <style>
+        .BannerArea {
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(38, 38, 38, 0) 100%), url(./image/overFlow-banner.jpg);
+            position: relative;
+            background-size: cover;
+            background-position: 100% 70%;
+            background-repeat: no-repeat;
+        }
+
+        @media(max-width:768px) {
+            .BannerArea {
+                background-position: 50% 70%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!--header-->
+    <header>
+        <div class="LogoArea"><img class="logoImg" src="./logo/white_ID.svg"></div>
+        <div class="mobile-navBar">
+            <div class="mobile-navBarBtn"><i class="fa fa-navicon"></i></div>
+            <!-- <i class="fa fa-times-circle-o"></i> -->
+        </div>
+        <nav class="NavBarMenu">
+            <ul class="Layer Layer-One">
+                <li><a href="./index.html">首頁</a></li>
+                <li class="hasSubLayer">
+                    <a>系統家俱<i class="fa-solid fa-angle-up Arrowicon"></i></a>
+                    <ul class="Layer Layer-Two" style="display: none;">
+                        <li><a href="./prdList/kitchenware.html">廚具</a></li>
+                        <li><a href="./prdList/cupboard.html">櫥櫃</a></li>
+                        <li><a href="./prdList/bathroomCabinet.html">浴櫃</a></li>
+                        <li><a href="./prdList/plate.html">板材</a></li>
+                    </ul>
+                </li>
+                <li><a href="./blogList/interior.html">設計裝修</a></li>
+                <li><a href="./blogList/camperVan.html">露營車</a></li>
+                <li><a class="active" href="./orderFlow.html">訂單流程</a></li>
+                <li><a href="./contactUs.html">聯絡我們</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="BannerArea">
+        <h1 class="BannerText">訂單流程</h1>
+    </div>
+    <!--main-->
+    <main>
+        <!-- 路徑 -->
+        <div class="path">
+            <a href="./index.html">首頁</a>
+            <span class="pathSlash">/</span>
+            <a href="./orderFlow.html" class="active">訂單流程</a>
+        </div>
+        <!-- solgan -->
+        <div class="solganContainer">
+            <div class="solganBox">
+                <p class="solgan">追求創新與完美，每一個案件的呈現與設計<br>都是經過反覆的發想及討論，最終淬煉而成的</p>
+            </div>
+        </div>
+        <!-- 訂單流程 -->
+        <article class="orderFlowArea">
+            <h2 class="title">訂單流程</h2>
+            <div class="orderStepContainer">
+                <div class="orderStepBox">
+                    <div class="Step">01</div>
+                    <div class="stepInfo">
+                        <div class="stepName">預約溝通</div>
+                        <ul class="stepText">
+                            <li>了解屋主需求</li>
+                            <li>空間風格定位</li>
+                            <li>整體預算、費用說明</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="orderStepBox">
+                    <div class="Step">02</div>
+                    <div class="stepInfo">
+                        <div class="stepName">現場丈量</div>
+                        <ul class="stepText">
+                            <li>場勘紀錄</li>
+                            <li>尺寸丈量</li>
+                            <li>討論空間需求</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="orderStepBox">
+                    <div class="Step">03</div>
+                    <div class="stepInfo">
+                        <div class="stepName">設計規劃</div>
+                        <ul class="stepText">
+                            <li>圖面放樣、規劃</li>
+                            <li>確認平面設計方案</li>
+                            <li>簽訂設計合約</li>
+                            <li>收取設計費</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="orderStepBox">
+                    <div class="Step">04</div>
+                    <div class="stepInfo">
+                        <div class="stepName">工程定案</div>
+                        <ul class="stepText">
+                            <li>平、立面圖</li>
+                            <li>軟裝、傢俱討論確認</li>
+                            <li>建材、材質討論定案</li>
+                            <li>工程報價</li>
+                            <li>簽訂工程合約</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="orderStepBox">
+                    <div class="Step">05</div>
+                    <div class="stepInfo">
+                        <div class="stepName">進場施工</div>
+                        <ul class="stepText">
+                            <li>裝潢監工</li>
+                            <li>進度報告</li>
+                            <li>提供進度照片</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="orderStepBox">
+                    <div class="Step">06</div>
+                    <div class="stepInfo">
+                        <div class="stepName">完工驗收</div>
+                        <ul class="stepText">
+                            <li>驗收交屋</li>
+                            <li>裝潢尾款</li>
+                            <li>售後服務保固</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- 更多問題 -->
+        <div class="moreQ">
+            <p class="title">有更多問題想詢問我們嗎?</p>
+            <a href="./contactUs.html" class="contactUs"><i class="fa-solid fa-pen-nib"></i>填寫聯絡表單</a>
+        </div>
+    </main>
+    <!--footer-->
+    <div class="popUpArea">
+        <div class="popUpBtn ToTopBtn"><i class="fa-solid fa-angle-up"></i></div>
+        <div class="popUpBtn LineBtn">
+            <img class="popUpLine" src="./icon/line.svg" alt="line">
+        </div>
+        <div class="LineLinkContainer">
+            <a class="LineLink" href="https://lin.ee/7ycMkqN">加入LINE＠</a>
+            <p class="LineLinkText">獲取更多鉅沐的第一手資訊！</p>
+            <img class="LineQRcode" src="./image/LINE.PNG" alt="Line">
+        </div>
+    </div>
+    <footer>
+        <div class="InfoArea">
+            <div class="footerContainer contactInfo">
+                <p class="littleTitle">聯絡資訊</p>
+                <div class="contactBox">
+                    <p class="ContactInfo ContactTime"><img src="./icon/clock.svg" alt="可聯絡時間">08:30 - 17:30</p>
+                    <p class="ContactInfo ContactPhone"><img src="./icon/phone.svg" alt="聯絡電話">
+                        <a class="telHref" href="tel:+886-5-2810587">（05）281-0587</a>
+                    </p>
+                    <p class="ContactInfo ContactPlace"><img src="./icon/place.svg" alt="聯絡地址">公司：嘉義市西區長安街123號1樓
+                    </p>
+                    <p class="ContactInfo ContactPlace"><img src="./icon/place.svg" alt="聯絡地址">工廠：嘉義縣灣橋村碑堂51-3號
+                    </p>
+                </div>
+            </div>
+            <div class="footerContainer cooperation">
+                <p class="littleTitle">合作企業</p>
+                <a href="#"><img class="Logo_CK" src="./logo/Block_CK.svg" alt="呈格營造"></a>
+            </div>
+            <div class="footerContainer socialMedia">
+                <p class="littleTitle">追蹤鉅沐</p>
+                <div class="mediaContainer">
+                    <a class="media lineBox" href="https://lin.ee/7ycMkqN">
+                        <img class="mediaimg" src="./icon/line.svg" alt="line">
+                        <span class="mediaName">LINE</span>
+                    </a>
+                    <a class="media facebookBox" href="#">
+                        <img class="mediaimg" src="./icon/facebook.svg" alt="facebook">
+                        <span class="mediaName">Facebook</span>
+                    </a>
+                    <a class="media youtubeBox" href="#">
+                        <img class="mediaimg" src="./icon/youtube.svg" alt="youtube">
+                        <span class="mediaName">Youtube</span>
+                    </a>
+                    <a class="media instagramBox" href="#">
+                        <img class="mediaimg" src="./icon/instagram.svg" alt="instagram">
+                        <span class="mediaName">Instagram</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="copyRight">
+            <p>Copyright© 2023 鉅沐工程有限公司</p>
+            <!-- <p>Designed by Lulu,Jenny</p> -->
+        </div>
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>

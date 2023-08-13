@@ -1,0 +1,185 @@
+/* banner */
+
+.BannerArea .BannerText {
+    font-family: 'Noto Serif TC';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 4rem;
+    line-height: 5.5rem;
+    letter-spacing: 0.12em;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+    width: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+}
+
+
+/* solgan */
+.solganContainer {
+    margin: 11.5rem;
+    border-bottom: 1px solid #DEDEDE;
+}
+
+.solgan {
+    font-family: 'Noto Serif TC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 200%;
+    letter-spacing: 0.2em;
+    color: #3E3A39;
+    /* width: 70%; */
+}
+
+.solganBox {
+    padding: 10px 10px 72px;
+}
+
+/* 訂單流程 */
+
+.orderFlowArea {
+    margin: 0 11.5rem;
+    overflow: hidden;
+}
+
+.title {
+    font-family: 'Noto Serif TC';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 150%;
+    letter-spacing: 0.51em;
+    color: #3E3A39;
+    display: inline-block;
+    border-bottom: 1px solid #3E3A39;
+    padding: 10px 0;
+}
+
+.orderStepContainer {
+    padding: 8rem 0 11.5rem;
+    border-bottom: 1px solid #DEDEDE;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 6rem;
+    justify-items: center;
+}
+
+.orderStepBox {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Step {
+    box-shadow: -43px 33px 22px rgb(41 38 35 / 1%), -11px 8px 14px rgb(41 38 35 / 5%), -3px 2px 7px rgb(41 38 35 / 6%);
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    background: #F3F2F1;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto';
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0.51em;
+    text-indent: 0.51rem;
+    color: #000000;
+    position: relative;
+}
+
+.Step::before {
+    content: " ";
+    width: 500px;
+    height: 1px;
+    background: #DEDEDE;
+    position: absolute;
+    z-index: -1;
+}
+
+.stepInfo {
+    margin-top: 3.5rem;
+}
+
+.stepName {
+    color: #3E3A39;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0.51em;
+    margin-bottom: 1.5rem;
+}
+
+ul.stepText {
+    list-style: inside;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.75rem;
+    color: #464646;
+}
+
+.stepText ::marker {
+    font-size: 0.5rem;
+}
+
+/* 更多問題 */
+.moreQ {
+    margin: 4.5rem 11.5rem 0;
+}
+
+.moreQ .title {
+    font-weight: 500;
+    display: block;
+    border: 0;
+    color: #3E3A39;
+}
+
+.moreQ .title::after {
+    content: " ";
+    width: 30%;
+    height: 1px;
+    background: #3E3A39;
+    display: block;
+    margin-top: 10px;
+}
+
+.contactUs {
+    display: inline-block;
+    padding: 0.5rem 1.8rem;
+    border: 1px solid #3E3A39;
+    color: #3E3A39;
+    margin-top: 3rem;
+    font-size: 1rem;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.35em;
+}
+
+@media(max-width:768px) {
+
+    .solganContainer,
+    .moreQ {
+        margin: 6.5rem 0;
+    }
+
+    .moreQ .title::after {
+        width: 100%;
+    }
+
+    /* 訂單流程區塊 */
+    .orderFlowArea {
+        margin: 0;
+    }
+
+    .orderStepContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .Step::before {
+        content: revert;
+    }
+}
