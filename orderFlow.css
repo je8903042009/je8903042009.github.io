@@ -24,7 +24,8 @@
     border-bottom: 1px solid #DEDEDE;
 }
 
-.solgan {
+
+/* .solgan {
     font-family: 'Noto Serif TC';
     font-style: normal;
     font-weight: 400;
@@ -32,11 +33,18 @@
     line-height: 200%;
     letter-spacing: 0.2em;
     color: #3E3A39;
-    /* width: 70%; */
-}
+} */
 
+/* 
 .solganBox {
     padding: 10px 10px 72px;
+} */
+
+.solgan {
+    font-size: 1.2rem;
+    letter-spacing: 0.5em;
+    margin-block: 2rem;
+    color: var(--lightBlock_textColor);
 }
 
 /* 訂單流程 */

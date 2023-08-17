@@ -308,7 +308,8 @@ main {
     .contactIntroContainer,
     .IntroContainer,
     .PrdListContainer,
-    .workIntroContainer {
+    .workIntroContainer,
+    .WorkListContainer {
         width: 100%;
     }
 
@@ -320,11 +321,11 @@ main {
 
     .WorkTypeArea {
         flex-direction: column-reverse;
-        padding: 8.5rem 2rem;
+        padding: 8.5rem 1.5rem;
     }
 
     .WorkListContainer {
-        flex-direction: column;
+        overflow-x: scroll;
     }
 
     .googleMap {
